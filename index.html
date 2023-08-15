@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>PainterX</title>
+    </head>
+    <body>
+        <div class="container">
+            <h6>PainterX</h6>
+            <div class="tool-board">
+                <div class="row">
+                    <label class="title">SHAPES</label>
+                    <ul class="options">
+                        <li class="option tool" id="rectangle">
+                            <span>RecTAnGE;</span>
+                        </li>
+                        <li class="option tool" id="triangle">
+                            <span>TrIAnglE;</span>
+                        </li>
+                        <li class="option tool" id="circle">
+                            <span>cIRclE;</span>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" class="check-with-label" id="fill-color">
+                            <label class="label-for-check" for="fill-color">Fill cOlOr;</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <label class="title">OpTioNs</label>
+                    <ul class="options">
+                        <li class="option tool active" id="brush">
+                            <span>BRush;</span>
+                        </li>
+                        <li class="option tool" id="eraser">
+                            <span>ErAseR;</span>
+                        </li>
+                        
+                        <li class="option">
+                            <input type="range" id="size-slider" min="1" max="30" value="5">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row colors">
+                    <label class="title">CoLoRS</label>
+                    <ul class="options">
+                        <li class="option ">
+                            <input type="color" class="color-picker"  value="#ffffff">
+                        </li>
+                        <li class="option selected">
+                            <input type="color" class="color-picker"  value="#000000">
+                        </li>
+                        <li class="option">
+                            <input type="color" class="color-picker"  value="#7FFF00">
+                        </li>
+                        <li class="option">
+                            <input type="color" class="color-picker"  value="#ff0000">
+                        </li>
+                        <li class="option">
+                            <input type="color" class="color-picker" id="color-picker" value="#0000FF">
+                        </li>
+                        <li class="option">
+                            <input type="color" class="color-picker"  value="#fff700">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row buttons">
+                    <button class="clear-canvas">clear ALL</button>
+                    <button class="save-img">sAve As iMage</button>
+                </div>
+            </div>
+            <div class="drawing-board">
+                <canvas></canvas>
+            </div>
+        </div>
+    </body>
+</html>
